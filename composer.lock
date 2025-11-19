@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1170741197f6b8f2ec9c47748f4e134c",
+    "content-hash": "43b2104def31dc0eccd252d54308eb70",
     "packages": [
         {
             "name": "composer/semver",
@@ -1952,6 +1952,85 @@
                 "source": "https://github.com/php-fig/log/tree/3.0.2"
             },
             "time": "2024-09-11T13:17:53+00:00"
+        },
+        {
+            "name": "psy/psysh",
+            "version": "v0.12.14",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bobthecow/psysh.git",
+                "reference": "95c29b3756a23855a30566b745d218bee690bef2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/95c29b3756a23855a30566b745d218bee690bef2",
+                "reference": "95c29b3756a23855a30566b745d218bee690bef2",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-tokenizer": "*",
+                "nikic/php-parser": "^5.0 || ^4.0",
+                "php": "^8.0 || ^7.4",
+                "symfony/console": "^7.0 || ^6.0 || ^5.0 || ^4.0 || ^3.4",
+                "symfony/var-dumper": "^7.0 || ^6.0 || ^5.0 || ^4.0 || ^3.4"
+            },
+            "conflict": {
+                "symfony/console": "4.4.37 || 5.3.14 || 5.3.15 || 5.4.3 || 5.4.4 || 6.0.3 || 6.0.4"
+            },
+            "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.2",
+                "composer/class-map-generator": "^1.6"
+            },
+            "suggest": {
+                "composer/class-map-generator": "Improved tab completion performance with better class discovery.",
+                "ext-pcntl": "Enabling the PCNTL extension makes PsySH a lot happier :)",
+                "ext-posix": "If you have PCNTL, you'll want the POSIX extension as well."
+            },
+            "bin": [
+                "bin/psysh"
+            ],
+            "type": "library",
+            "extra": {
+                "bamarni-bin": {
+                    "bin-links": false,
+                    "forward-command": false
+                },
+                "branch-alias": {
+                    "dev-main": "0.12.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "Psy\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Justin Hileman",
+                    "email": "justin@justinhileman.info"
+                }
+            ],
+            "description": "An interactive shell for modern PHP.",
+            "homepage": "https://psysh.org",
+            "keywords": [
+                "REPL",
+                "console",
+                "interactive",
+                "shell"
+            ],
+            "support": {
+                "issues": "https://github.com/bobthecow/psysh/issues",
+                "source": "https://github.com/bobthecow/psysh/tree/v0.12.14"
+            },
+            "time": "2025-10-27T17:15:31+00:00"
         },
         {
             "name": "symfony/asset",
@@ -7639,6 +7718,66 @@
                 }
             ],
             "time": "2025-09-26T15:07:38+00:00"
+        },
+        {
+            "name": "teamdotblue/psysh-bundle",
+            "version": "v4.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/teamdotblue/PsyshBundle.git",
+                "reference": "cec0edceae08aa275c42907ba27abb04d03263d6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/teamdotblue/PsyshBundle/zipball/cec0edceae08aa275c42907ba27abb04d03263d6",
+                "reference": "cec0edceae08aa275c42907ba27abb04d03263d6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2",
+                "psy/psysh": "^0.11 || ^0.12",
+                "symfony/error-handler": "^6.4 || ^7.0",
+                "symfony/expression-language": "^6.4 || ^7.0",
+                "symfony/framework-bundle": "^6.4 || ^7.0"
+            },
+            "require-dev": {
+                "ergebnis/composer-normalize": "^2.8",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "phpstan/phpstan": "^1.0",
+                "phpunit/phpunit": "^10.5",
+                "rector/rector": "^1.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "symfony": {
+                    "allow-contrib": true
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/psysh.php"
+                ],
+                "psr-4": {
+                    "TeamDotBlue\\PsyshBundle\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A port of the PHP REPL PsySH for Symfony.",
+            "keywords": [
+                "REPL",
+                "console",
+                "interactive",
+                "psysh",
+                "shell",
+                "symfony"
+            ],
+            "support": {
+                "source": "https://github.com/teamdotblue/PsyshBundle/tree/v4.9.0"
+            },
+            "time": "2025-03-24T15:30:55+00:00"
         },
         {
             "name": "twig/extra-bundle",

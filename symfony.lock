@@ -290,6 +290,9 @@
             "./config/packages/messenger.yaml"
         ]
     },
+    "teamdotblue/psysh-bundle": {
+        "version": "v4.9.0"
+    },
     "twig/extra-bundle": {
         "version": "v3.22.1"
     }
