@@ -3,7 +3,8 @@
         <div id="player-form-header">
             <span id="close-player-form" onclick="closeFormModal()">X</span>
         </div>
-        <form>
+        <form action="{{ path("app_add_update_player") }}" method="POST">
+            <input type="hidden" id="type" name="add" value="add" />
             <label for="lastname">Nom : </label>
             <input type="text" id="lastname" name="lastname" />
             <label for="firstname">Prénom : </label>
