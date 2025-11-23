@@ -11,6 +11,8 @@
 <div class="example-wrapper">
     <h1>Gestion des joueurs</h1>
 
+    <button onclick=showFormModal("add")>Ajouter</button>
+
     <table>
         <tr>
             <th>Numéro</th>
@@ -34,4 +36,6 @@
     </table>
 
 </div>
+{{ include("player/_player_form.html.twig") }} 
+
 {% endblock %}
