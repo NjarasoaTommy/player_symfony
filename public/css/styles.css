@@ -11,8 +11,8 @@
     z-index: 2;
     display:block;
     background-color: rgb(9,9,9,0.9);
-    width: 100vw;
-    height: 100vh;
+    width: 0vw;
+    height: 0vh;
 }
 #player-form{
     z-index: 3;
