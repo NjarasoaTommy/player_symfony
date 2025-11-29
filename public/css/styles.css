@@ -6,19 +6,20 @@
 }
 .overlay{
     position: absolute;
-    top: -100%;
-    left: -100px;
+    top: -200%;
     z-index: 2;
     display:block;
-    background-color: rgb(9,9,9,0.9);
+    background-color: rgb(123,124,124,0.8);
+    /* background-color: rgb(9,9,9,0.9); */
     width: 0vw;
     height: 0vh;
+    transition: top 0.5s;
 }
 #player-form{
     z-index: 3;
     position: absolute;
-    top: 10%;
-    left: 50%;
+    top: 10vh;
+    left: 50vw;
     margin-left: -350px;
     width: 700px;
     /* padding-top: 100px; */
@@ -26,6 +27,7 @@
     background-color: #fff;
     border-radius: 20px;
     font-size: 20px;
+    transition: all 0.7s;
 }
 #player-form input{
     display: block;
