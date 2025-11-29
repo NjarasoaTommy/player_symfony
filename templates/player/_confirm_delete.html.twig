@@ -1,0 +1,19 @@
+<div class="overlay" id="delete">
+    <div id="player-form">
+        <div id="player-form-header">
+            <span id="close-player-form" onclick="closeFormModal('delete')">X</span>
+        </div>
+        <form id="form-delete" action="{{ path("api_delete_player_by_id") }}" method="POST">
+            <input type="hidden" id="id_delete" name="id" value="" />
+            <h2>Voulez-vous vraiment supprimer ce joueur? Cette action est irréversible.</h2>
+
+            <div>
+                <p>NOM : <span id="name_delete"><span></p>
+                <p>Poste : <span id="poste_delete"><span></p>
+                <p>Numéro : <span id="number_delete"><span></p>
+            </div>
+
+            <input id="submit" type="submit" value="Supprimer" />
+        </form>
+    </div>
+</div>
