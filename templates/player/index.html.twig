@@ -8,10 +8,16 @@
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
+{% for type, messages in app.flashes() %}
+{% for message_array in messages %}
+    <h1 style='color:red'>{{ message_array }}</h1>
+{% endfor %}
+{% endfor %}
+
 <div class="example-wrapper">
     <h1>Gestion des joueurs</h1>
 
-    <button onclick=showFormModal("add")>Ajouter</button>
+    <button onclick=showFormModal("add_update")>Ajouter</button>
 
     <table>
         <tr>
@@ -37,5 +43,6 @@
 
 </div>
 {{ include("player/_player_form.html.twig") }} 
+{{ include("player/_confirm_delete.html.twig") }} 
 
 {% endblock %}
