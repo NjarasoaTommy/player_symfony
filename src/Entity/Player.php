@@ -30,7 +30,7 @@ class Player
         return $this->id;
     }
 
-    public function getFirstame(): ?string
+    public function getFirstname(): ?string
     {
         return $this->firstname;
     }
