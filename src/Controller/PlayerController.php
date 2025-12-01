@@ -83,7 +83,7 @@ final class PlayerController extends AbstractController
         $player = $playerRepository->find($id);
         return $this->json([
             'lastname' => $player->getLastname(),
-            // 'firstname' => $player->getFirstname(),
+            'firstname' => $player->getFirstname(),
             'poste' => $player->getPoste(),
             'number' => $player->getNumber(),
         ]);
